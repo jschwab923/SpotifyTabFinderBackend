@@ -13,7 +13,7 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
-app.route('/xpath').get("div[@class='content']/table/tr/td[@class='sres']/table[@class='tresults  ']/tr/td/div[a]")
+app.route('/xpath').get("div[@class='content']/table/tr/td[@class='sres']/table[@class='tresults  ']/tr/td/div[a]");
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
