@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/xpath', function(request, response) {
-  response.send("div[@class='content']/table/tr/td[@class='sres']/table[@class='tresults  ']/tr/td/div[a]");
+  response.send({"xpath":"div[@class='content']/table/tr/td[@class='sres']/table[@class='tresults  ']/tr/td/div[a]"});
 });
 
 app.listen(app.get('port'), function() {
