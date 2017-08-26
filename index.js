@@ -5,8 +5,12 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
 
+app.get('/', function(request, response) {
+  response.send(":P");
+});
+
 app.get('/xpath', function(request, response) {
-  response.send("div[@class='content']/table/tr/td[@class='sres']/table[@class='tresults  ']/tr/td/div[a]")
+  response.send("div[@class='content']/table/tr/td[@class='sres']/table[@class='tresults  ']/tr/td/div[a]");
 });
 
 app.listen(app.get('port'), function() {
