@@ -9,8 +9,8 @@ app.get('/', function(request, response) {
   response.send(":P");
 });
 
-app.get('/xpath', function(request, response) {
-  response.send({"xpath":"div[@class='content']/table/tr/td[@class='sres']/table[@class='tresults  ']/tr/td/div[a]"});
+app.get('p', function(request, response) {
+  response.send({"xpath":"//div[@class='content']/table/tr/td[@class='sres']/table[@class='tresults  ']/tr/td/div[a]"});
 });
 
 app.listen(app.get('port'), function() {
